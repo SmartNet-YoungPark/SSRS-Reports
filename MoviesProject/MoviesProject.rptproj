@@ -52,6 +52,7 @@
     <DataSet Include="dscFilms.rsd" />
   </ItemGroup>
   <ItemGroup>
+    <DataSource Include="DataSource1.rds" />
     <DataSource Include="dscMovies.rds" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +66,30 @@
     <Report Include="08ConditionalFormatting.rdl" />
     <Report Include="09Indicator.rdl" />
     <Report Include="10Gauges.rdl" />
+    <Report Include="11Parameter.rdl" />
+    <Report Include="12DropDownListParameter.rdl" />
+    <Report Include="12DropdownListParamterwithDirector.rdl" />
+    <Report Include="13Nullparametrs.rdl" />
+    <Report Include="14Cascading.rdl" />
+    <Report Include="15Matrix.rdl" />
+    <Report Include="16Lists.rdl" />
+    <Report Include="17DrillReports.rdl" />
+    <Report Include="18Chart1.rdl" />
+    <Report Include="18Charts.rdl" />
+    <Report Include="18SubReport.rdl" />
+    <Report Include="21PivotTable(Dynamic Matrix).rdl" />
+    <Report Include="22DocumentMap.rdl" />
+    <Report Include="23HeaderTemplate.rdl" />
+    <Report Include="23ReportVairables.rdl" />
+    <Report Include="24HeaderTemplate.rdl" />
+    <Report Include="25CodeToReport.rdl" />
+    <Report Include="26CodeAssembly.rdl" />
+    <Report Include="33Countrys.rdl" />
+    <Report Include="36CountryCertificateMatrix.rdl" />
+    <Report Include="37CountryCertificateData.rdl" />
+    <Report Include="38ClickableMap.rdl" />
+    <Report Include="40ListRectangle.rdl" />
+    <Report Include="44CountryMainReport.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

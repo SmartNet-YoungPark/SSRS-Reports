@@ -439,7 +439,7 @@ FROM     tblFilm</CommandText>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <GaugePanel Name="GaugePanel3">
+                        <GaugePanel Name="GaugePanel1">
                           <RadialGauges>
                             <RadialGauge Name="RadialGauge1">
                               <GaugeScales>
@@ -492,20 +492,73 @@ FROM     tblFilm</CommandText>
                                       <Width>30</Width>
                                     </RadialPointer>
                                   </GaugePointers>
+                                  <ScaleRanges>
+                                    <ScaleRange Name="RadialRange1">
+                                      <Style>
+                                        <Border>
+                                          <Color>Silver</Color>
+                                          <Style>Solid</Style>
+                                        </Border>
+                                        <BackgroundColor>#00ffffff</BackgroundColor>
+                                        <BackgroundGradientType>DiagonalLeft</BackgroundGradientType>
+                                        <BackgroundGradientEndColor>Salmon</BackgroundGradientEndColor>
+                                        <BackgroundHatchType>None</BackgroundHatchType>
+                                        <ShadowOffset>0pt</ShadowOffset>
+                                      </Style>
+                                      <DistanceFromScale>30</DistanceFromScale>
+                                      <StartValue>
+                                        <Value>4</Value>
+                                        <Multiplier>1</Multiplier>
+                                      </StartValue>
+                                      <EndValue>
+                                        <Value>4</Value>
+                                        <Multiplier>1</Multiplier>
+                                      </EndValue>
+                                      <StartWidth>15</StartWidth>
+                                      <EndWidth>30</EndWidth>
+                                      <Placement>Inside</Placement>
+                                    </ScaleRange>
+                                    <ScaleRange Name="RadialRange2">
+                                      <Style>
+                                        <Border>
+                                          <Color>Silver</Color>
+                                          <Style>Solid</Style>
+                                        </Border>
+                                        <BackgroundColor>#00ffffff</BackgroundColor>
+                                        <BackgroundGradientType>DiagonalLeft</BackgroundGradientType>
+                                        <BackgroundGradientEndColor>Salmon</BackgroundGradientEndColor>
+                                        <FontFamily>Arial</FontFamily>
+                                        <BackgroundHatchType>None</BackgroundHatchType>
+                                        <ShadowOffset>0pt</ShadowOffset>
+                                      </Style>
+                                      <DistanceFromScale>5</DistanceFromScale>
+                                      <StartValue>
+                                        <Value>0</Value>
+                                        <Multiplier>1</Multiplier>
+                                      </StartValue>
+                                      <EndValue>
+                                        <Value>=Sum(Fields!FilmOscarNominations.Value)</Value>
+                                        <Multiplier>1</Multiplier>
+                                      </EndValue>
+                                      <StartWidth>15</StartWidth>
+                                      <EndWidth>15</EndWidth>
+                                      <Placement>Inside</Placement>
+                                    </ScaleRange>
+                                  </ScaleRanges>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
                                     </Border>
-                                    <BackgroundColor>PaleTurquoise</BackgroundColor>
+                                    <BackgroundColor>LightGrey</BackgroundColor>
                                     <BackgroundGradientType>None</BackgroundGradientType>
                                     <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
                                     <BackgroundHatchType>None</BackgroundHatchType>
                                     <ShadowOffset>0pt</ShadowOffset>
                                   </Style>
-                                  <Interval>50</Interval>
+                                  <Interval>1</Interval>
                                   <IntervalOffset>NaN</IntervalOffset>
                                   <MaximumValue>
-                                    <Value>=Fields!FilmOscarNominations.Value</Value>
+                                    <Value>15</Value>
                                     <Multiplier>1</Multiplier>
                                   </MaximumValue>
                                   <MinimumValue>
@@ -530,7 +583,6 @@ FROM     tblFilm</CommandText>
                                     <Length>14</Length>
                                     <Width>8</Width>
                                     <Shape>Trapezoid</Shape>
-                                    <Hidden>true</Hidden>
                                   </GaugeMajorTickMarks>
                                   <GaugeMinorTickMarks>
                                     <Interval>NaN</Interval>
@@ -549,7 +601,6 @@ FROM     tblFilm</CommandText>
                                     </TickMarkImage>
                                     <Length>8</Length>
                                     <Width>3</Width>
-                                    <Hidden>true</Hidden>
                                   </GaugeMinorTickMarks>
                                   <MaximumPin>
                                     <PinLabel>
@@ -648,7 +699,7 @@ FROM     tblFilm</CommandText>
                           </RadialGauges>
                           <GaugeLabels>
                             <GaugeLabel Name="GaugeLabel1">
-                              <Text>35</Text>
+                              <Text>=Fields!FilmOscarWins.Value</Text>
                               <TextShadowOffset>0pt</TextShadowOffset>
                               <UseFontPercent>true</UseFontPercent>
                               <Style>
@@ -658,17 +709,16 @@ FROM     tblFilm</CommandText>
                                 <BackgroundColor>#00ffffff</BackgroundColor>
                                 <BackgroundGradientType>None</BackgroundGradientType>
                                 <BackgroundGradientEndColor>#00ffffff</BackgroundGradientEndColor>
-                                <FontFamily>Segoe UI Light</FontFamily>
+                                <FontFamily>Segoe UI Black</FontFamily>
                                 <FontSize>14pt</FontSize>
-                                <TextAlign>Center</TextAlign>
-                                <VerticalAlign>Middle</VerticalAlign>
-                                <Color>#333333</Color>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>#404040</Color>
                                 <ShadowOffset>0pt</ShadowOffset>
                               </Style>
-                              <Top>30</Top>
-                              <Left>30</Left>
-                              <Height>40</Height>
-                              <Width>40</Width>
+                              <Top>34.5454521179199</Top>
+                              <Left>37.8787879943848</Left>
+                              <Height>30</Height>
+                              <Width>30</Width>
                               <ParentItem>RadialGauges.RadialGauge1</ParentItem>
                             </GaugeLabel>
                           </GaugeLabels>
@@ -706,7 +756,7 @@ FROM     tblFilm</CommandText>
                             <Border>
                               <Style>None</Style>
                             </Border>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>PaleTurquoise</BackgroundColor>
                           </Style>
                         </GaugePanel>
                       </CellContents>
@@ -1084,8 +1134,8 @@ FROM     tblFilm</CommandText>
             <DataSetName>DataSet1</DataSetName>
             <Top>0.575in</Top>
             <Left>0.425in</Left>
-            <Height>2.78333in</Height>
-            <Width>8.84167in</Width>
+            <Height>2.78334in</Height>
+            <Width>8.84166in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
